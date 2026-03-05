@@ -9,7 +9,7 @@ const HomeScreen = () => {
       source={{uri:Image.LOGO,}}
       style={{width: 200, height:200}}/>
 
-      <Text>HomeScreen</Text>
+      <Text>HomeScreen :</Text>
     </View>
 
   )
