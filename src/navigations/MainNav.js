@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import Login from '../screens/auth/Login';
+import LoginScreen from '../screens/auth/LoginScreen';
+import HomeScreen from '../screens/main/HomeScreen';
+import ProfileScreen from '../screens/main/ProfleScreen';
 import { ROUTES } from '../utils';
 
 const Stack = createStackNavigator();
@@ -23,7 +23,7 @@ export default function MainNavigation() {
         >
         <Stack.Screen 
             name={ROUTES.LOGIN} 
-            component={Login}
+            component={LoginScreen}
             options={{ title: 'Login' }}
         />
         <Stack.Screen 
